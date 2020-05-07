@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mNoInternetIv = findViewById(R.id.no_internet_iv);
-//        mNoInternetTv = findViewById(R.id.no_internet_tv);
+        mNoInternetIv = findViewById(R.id.no_internet_iv);
+        mNoInternetTv = findViewById(R.id.no_internet_tv);
 
         recyclerView = findViewById(R.id.recyclerView);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
@@ -164,14 +164,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showNoConnection(){
-//        mNoInternetIv.setVisibility(View.VISIBLE);
-//        mNoInternetTv.setVisibility(View.VISIBLE);
+        mNoInternetIv.setVisibility(View.VISIBLE);
+        mNoInternetTv.setVisibility(View.VISIBLE);
     }
 
     public void showRecyclerView(){
         loadPage(PAGE);
-//        mNoInternetIv.setVisibility(View.INVISIBLE);
-//        mNoInternetTv.setVisibility(View.INVISIBLE);
+        mNoInternetIv.setVisibility(View.INVISIBLE);
+        mNoInternetTv.setVisibility(View.INVISIBLE);
     }
 
     public boolean checkInternetConnectivity(){
